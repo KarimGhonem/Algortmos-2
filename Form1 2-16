@@ -1,0 +1,365 @@
+#pragma once
+
+namespace FirstClasds {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// Summary for Form1
+	/// </summary>
+	public ref class Form1 : public System::Windows::Forms::Form
+	{
+	public:
+		Form1(void)
+		{
+			InitializeComponent();
+			//
+			//TODO: Add the constructor code here
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		~Form1()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::DataGridView^  Grilla_A;
+	protected: 
+
+
+
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column3;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column4;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column5;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column6;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column7;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column8;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column9;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column10;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  Column11;
+	private: System::Windows::Forms::DataGridView^  Grilla_B;
+
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn3;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn4;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn5;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn6;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn7;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn8;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn9;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn10;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn11;
+	private: System::Windows::Forms::TextBox^  ttamano;
+	private: System::Windows::Forms::Button^  btamano;
+
+	private: System::Windows::Forms::Button^  Button2;
+
+
+
+	private: System::Windows::Forms::Button^  bmostrarA;
+	private: System::Windows::Forms::Button^  bmostrarB;
+
+
+
+	protected: 
+
+	private:
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		System::ComponentModel::Container ^components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			this->Grilla_A = (gcnew System::Windows::Forms::DataGridView());
+			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column9 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column10 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column11 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Grilla_B = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridViewTextBoxColumn1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn9 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn10 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn11 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->ttamano = (gcnew System::Windows::Forms::TextBox());
+			this->btamano = (gcnew System::Windows::Forms::Button());
+			this->Button2 = (gcnew System::Windows::Forms::Button());
+			this->bmostrarA = (gcnew System::Windows::Forms::Button());
+			this->bmostrarB = (gcnew System::Windows::Forms::Button());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->Grilla_A))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->Grilla_B))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// Grilla_A
+			// 
+			this->Grilla_A->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->Grilla_A->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(11) {this->Column1, this->Column2, 
+				this->Column3, this->Column4, this->Column5, this->Column6, this->Column7, this->Column8, this->Column9, this->Column10, this->Column11});
+			this->Grilla_A->Location = System::Drawing::Point(12, -1);
+			this->Grilla_A->Name = L"Grilla_A";
+			this->Grilla_A->Size = System::Drawing::Size(484, 45);
+			this->Grilla_A->TabIndex = 1;
+			this->Grilla_A->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Form1::dataGridView2_CellContentClick);
+			// 
+			// Column1
+			// 
+			this->Column1->HeaderText = L"0";
+			this->Column1->Name = L"Column1";
+			this->Column1->Width = 40;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"1";
+			this->Column2->Name = L"Column2";
+			this->Column2->Width = 40;
+			// 
+			// Column3
+			// 
+			this->Column3->HeaderText = L"2";
+			this->Column3->Name = L"Column3";
+			this->Column3->Width = 40;
+			// 
+			// Column4
+			// 
+			this->Column4->HeaderText = L"3";
+			this->Column4->Name = L"Column4";
+			this->Column4->Width = 40;
+			// 
+			// Column5
+			// 
+			this->Column5->HeaderText = L"4";
+			this->Column5->Name = L"Column5";
+			this->Column5->Width = 40;
+			// 
+			// Column6
+			// 
+			this->Column6->HeaderText = L"5";
+			this->Column6->Name = L"Column6";
+			this->Column6->Width = 40;
+			// 
+			// Column7
+			// 
+			this->Column7->HeaderText = L"6";
+			this->Column7->Name = L"Column7";
+			this->Column7->Width = 40;
+			// 
+			// Column8
+			// 
+			this->Column8->HeaderText = L"7";
+			this->Column8->Name = L"Column8";
+			this->Column8->Width = 40;
+			// 
+			// Column9
+			// 
+			this->Column9->HeaderText = L"8";
+			this->Column9->Name = L"Column9";
+			this->Column9->Width = 40;
+			// 
+			// Column10
+			// 
+			this->Column10->HeaderText = L"9";
+			this->Column10->Name = L"Column10";
+			this->Column10->Width = 40;
+			// 
+			// Column11
+			// 
+			this->Column11->HeaderText = L"10";
+			this->Column11->Name = L"Column11";
+			this->Column11->Width = 40;
+			// 
+			// Grilla_B
+			// 
+			this->Grilla_B->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->Grilla_B->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(11) {this->dataGridViewTextBoxColumn1, 
+				this->dataGridViewTextBoxColumn2, this->dataGridViewTextBoxColumn3, this->dataGridViewTextBoxColumn4, this->dataGridViewTextBoxColumn5, 
+				this->dataGridViewTextBoxColumn6, this->dataGridViewTextBoxColumn7, this->dataGridViewTextBoxColumn8, this->dataGridViewTextBoxColumn9, 
+				this->dataGridViewTextBoxColumn10, this->dataGridViewTextBoxColumn11});
+			this->Grilla_B->Location = System::Drawing::Point(12, 259);
+			this->Grilla_B->Name = L"Grilla_B";
+			this->Grilla_B->Size = System::Drawing::Size(484, 45);
+			this->Grilla_B->TabIndex = 2;
+			this->Grilla_B->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Form1::Grilla_B_CellContentClick);
+			// 
+			// dataGridViewTextBoxColumn1
+			// 
+			this->dataGridViewTextBoxColumn1->HeaderText = L"0";
+			this->dataGridViewTextBoxColumn1->Name = L"dataGridViewTextBoxColumn1";
+			this->dataGridViewTextBoxColumn1->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn2
+			// 
+			this->dataGridViewTextBoxColumn2->HeaderText = L"1";
+			this->dataGridViewTextBoxColumn2->Name = L"dataGridViewTextBoxColumn2";
+			this->dataGridViewTextBoxColumn2->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn3
+			// 
+			this->dataGridViewTextBoxColumn3->HeaderText = L"2";
+			this->dataGridViewTextBoxColumn3->Name = L"dataGridViewTextBoxColumn3";
+			this->dataGridViewTextBoxColumn3->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn4
+			// 
+			this->dataGridViewTextBoxColumn4->HeaderText = L"3";
+			this->dataGridViewTextBoxColumn4->Name = L"dataGridViewTextBoxColumn4";
+			this->dataGridViewTextBoxColumn4->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn5
+			// 
+			this->dataGridViewTextBoxColumn5->HeaderText = L"4";
+			this->dataGridViewTextBoxColumn5->Name = L"dataGridViewTextBoxColumn5";
+			this->dataGridViewTextBoxColumn5->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn6
+			// 
+			this->dataGridViewTextBoxColumn6->HeaderText = L"5";
+			this->dataGridViewTextBoxColumn6->Name = L"dataGridViewTextBoxColumn6";
+			this->dataGridViewTextBoxColumn6->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn7
+			// 
+			this->dataGridViewTextBoxColumn7->HeaderText = L"6";
+			this->dataGridViewTextBoxColumn7->Name = L"dataGridViewTextBoxColumn7";
+			this->dataGridViewTextBoxColumn7->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn8
+			// 
+			this->dataGridViewTextBoxColumn8->HeaderText = L"7";
+			this->dataGridViewTextBoxColumn8->Name = L"dataGridViewTextBoxColumn8";
+			this->dataGridViewTextBoxColumn8->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn9
+			// 
+			this->dataGridViewTextBoxColumn9->HeaderText = L"8";
+			this->dataGridViewTextBoxColumn9->Name = L"dataGridViewTextBoxColumn9";
+			this->dataGridViewTextBoxColumn9->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn10
+			// 
+			this->dataGridViewTextBoxColumn10->HeaderText = L"9";
+			this->dataGridViewTextBoxColumn10->Name = L"dataGridViewTextBoxColumn10";
+			this->dataGridViewTextBoxColumn10->Width = 40;
+			// 
+			// dataGridViewTextBoxColumn11
+			// 
+			this->dataGridViewTextBoxColumn11->HeaderText = L"10";
+			this->dataGridViewTextBoxColumn11->Name = L"dataGridViewTextBoxColumn11";
+			this->dataGridViewTextBoxColumn11->Width = 40;
+			// 
+			// ttamano
+			// 
+			this->ttamano->Location = System::Drawing::Point(506, -1);
+			this->ttamano->Name = L"ttamano";
+			this->ttamano->Size = System::Drawing::Size(131, 20);
+			this->ttamano->TabIndex = 3;
+			// 
+			// btamano
+			// 
+			this->btamano->Location = System::Drawing::Point(539, 21);
+			this->btamano->Name = L"btamano";
+			this->btamano->Size = System::Drawing::Size(75, 23);
+			this->btamano->TabIndex = 4;
+			this->btamano->Text = L"Tamaño";
+			this->btamano->UseVisualStyleBackColor = true;
+			this->btamano->Click += gcnew System::EventHandler(this, &Form1::btamano_Click);
+			// 
+			// Button2
+			// 
+			this->Button2->Location = System::Drawing::Point(12, 90);
+			this->Button2->Name = L"Button2";
+			this->Button2->Size = System::Drawing::Size(75, 23);
+			this->Button2->TabIndex = 5;
+			this->Button2->Text = L"Insertar";
+			this->Button2->UseVisualStyleBackColor = true;
+			this->Button2->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
+			// bmostrarA
+			// 
+			this->bmostrarA->Location = System::Drawing::Point(130, 90);
+			this->bmostrarA->Name = L"bmostrarA";
+			this->bmostrarA->Size = System::Drawing::Size(75, 23);
+			this->bmostrarA->TabIndex = 6;
+			this->bmostrarA->Text = L"Mostrar";
+			this->bmostrarA->UseVisualStyleBackColor = true;
+			// 
+			// bmostrarB
+			// 
+			this->bmostrarB->Location = System::Drawing::Point(12, 367);
+			this->bmostrarB->Name = L"bmostrarB";
+			this->bmostrarB->Size = System::Drawing::Size(75, 23);
+			this->bmostrarB->TabIndex = 8;
+			this->bmostrarB->Text = L"Mostrar";
+			this->bmostrarB->UseVisualStyleBackColor = true;
+			// 
+			// Form1
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(750, 528);
+			this->Controls->Add(this->bmostrarB);
+			this->Controls->Add(this->bmostrarA);
+			this->Controls->Add(this->Button2);
+			this->Controls->Add(this->btamano);
+			this->Controls->Add(this->ttamano);
+			this->Controls->Add(this->Grilla_B);
+			this->Controls->Add(this->Grilla_A);
+			this->Name = L"Form1";
+			this->Text = L"First Class";
+			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->Grilla_A))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->Grilla_B))->EndInit();
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
+		}
+#pragma endregion
+	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
+			 }
+	private: System::Void dataGridView2_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {
+			 }
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		 }
+
+private: System::Void btamano_Click(System::Object^  sender, System::EventArgs^  e)
+		 {
+			Grilla_A->ColumnCount=System::Convert::ToInt32(ttamano->Text);
+			Grilla_A->RowCount=1;
+		 }
+private: System::Void Grilla_B_CellContentClick(System::Object^  sender, System::Windows::Forms::DataGridViewCellEventArgs^  e) {
+		 }
+};
+}
+
