@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace System::Windows::Forms;
+const int N=20;
+
+void Argumentos_defecto(DataGridView^ Grilla_A, int vector[N], int tam=0)
+{
+	int i=0;
+	//tam=Grilla_A->RowCount;
+	tam=Grilla_A->ColumnCount;
+	while(i<tam)
+	{
+		vector[i]=System::Convert::ToInt32(Grilla_A->Rows[0]->Cells[i]->Value);
+		i++;
+	}
+}
+
+void Mostrar_Argumentos_defecto(DataGridView^ Grilla_A, int vector[N], int tam=0)
+{
+	int i=0;
+	Grilla_A->RowCount=1;
+	Grilla_A->ColumnCount=tam;
+	while(i<tam)
+	{
+		Grilla_A->Rows[0]->Cells[i]->Value=System::Convert::ToString(vector[i]);
+		i++;
+	}
+}
