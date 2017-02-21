@@ -1,0 +1,55 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include <stdarg.h>
+
+void concatenararreglos(int cuantos, int unión, …)
+{ 
+	int i, j, k, l, m;
+	i=0;
+	if(cuantos==1)
+	{
+		For(i=0;i<n;i++)
+		{
+			Vector[i]=v[i];
+			l++; k++;
+		}
+	}
+	tamano=n;
+	if(cuantos==2)
+	{
+		for(i=0;i<n;i++)
+		{
+			vector[k]=v[i];
+			k++;
+		}
+		for(j=0;j<m;j++)
+		{
+			vector[k]=v[j]->tamano;
+		}
+	}
+	if(cuantos==3)
+	{
+		for(i=0;i<n;i++)
+		{
+			vector[k]=v[i];
+			k++;
+		}
+		for(j=0;j<m;j++)
+		{
+			vector[k]=v[j];
+			k++;
+		}
+		for(l=0;l<z;l++)
+		{
+			vector[k]=v[l];
+			k++;
+		}
+	tamano=n+m+z;
+	}
+}
+
+void main()
+{
+	getch();
+}
